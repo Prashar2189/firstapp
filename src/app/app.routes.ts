@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { HomedataComponent } from './about/homedata/homedata/homedata.component';
 import { AboutdataComponent } from './about/aboutdata/aboutdata.component';
 import { ServicedataComponent } from './about/servicedata/servicedata.component';
 import { TechnodataComponent } from './about/technodata/technodata/technodata.component';
@@ -6,7 +7,16 @@ import { HiredataComponent } from './about/hiredata/hiredata/hiredata.component'
 import { CareerdataComponent } from './about/careerdata/careerdata/careerdata.component';
 import { ContactdataComponent } from './about/contactdata/contactdata/contactdata.component';
 
+
+
 export const routes: Routes = [
+   {
+      path:"",
+      component: HomedataComponent
+   },
+
+
+
 {
     path:"about-page",
     component: AboutdataComponent
