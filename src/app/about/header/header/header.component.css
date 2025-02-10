@@ -1,24 +1,94 @@
-header {
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
+.navbar .navbar-nav .nav-link {
+  padding: 10px;
+  color: #000;
+  font-size: 18px;
+  outline: none;
 }
 
-nav ul {
-  list-style-type: none;
+.bg-primary-white {
+  background-color: #fff !important;
+}
+
+.blue-color-text {
+  color: #3781c2 !important;
+}
+
+.logo-me img {
+  width: 150px;
+}
+
+.fa-phone {
+  color: #0d6efd;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active .nav-link:focus {
+  color: #3781c2 !important;
+}
+
+.orange-color-text {
+  color: #ff7e01;
+}
+
+
+.fntawsome{
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+
+
+.btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+.btn {
+  transition: .5s;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+
+.fnt11{
+font-family: "Inter", sans-serif;
+}
+
+
+.topbar .top-info {
+  letter-spacing: 1px;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fixed-nav[_ngcontent-ng-c3775710024] {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  top: 0;
 }

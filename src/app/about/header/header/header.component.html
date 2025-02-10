@@ -1,13 +1,68 @@
-  <header class="app-header">
-    <nav>
-      <ul>
-      <li><a routerLink="/" routerLinkActive="active"></a></li>
-      <li><a routerLink="/about-page" routerLinkActive="active">About Us</a></li>
-      <li><a routerLink="/service-page" routerLinkActive="active">Services</a></li>
-      <li><a routerLink="/techno-page" routerLinkActive="active">Technologies</a></li>
-      <li><a routerLink="/hire-page" routerLinkActive="active">Hire Team</a></li>
-      <li><a routerLink="/career-page" routerLinkActive="active">career-page</a></li>
-      <li><a routerLink="/contact-data" routerLinkActive="active">Contact Us</a></li>   
-      </ul>
-    </nav>
-  </header>
+<!-- header.component.html -->
+<div class="fixed-nav">
+    <!-- First Layer: Email and LinkedIn (Top bar) -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <!--small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 orange-color-text"></i></a>Appsimity Solutions LLP 248, Sector 37A</small-->
+                    <small class="me-3 text-white-50"><a href="#"><i
+                                class="fntawsome fas fa-envelope me-2 orange-color-text"></i></a> {{emailadd}} </small>
+                </div>
+
+                <div class="top-link">
+                    <!-- <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f orange-color-text"></i></a> -->
+                    <!-- <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter orange-color-text"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram orange-color-text"></i></a> -->
+                    <a href="https://in.linkedin.com/company/appsimity-solutions-llp" target="_blank"
+                        class="bg-light nav-fill btn btn-sm-square rounded-circle me-0 fab1"><i
+                            class="fntawsome fab fa-linkedin-in orange-color-text"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Layer: Navbar -->
+    <div class="container-fluid bg-primary-white">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <div class="logo-me"><img src="appsimity-logo.png"></div>
+                    <!-- <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1> -->
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                    <li><a routerLink="/" class="nav-item nav-link fnt11"></a></li>
+                    <li><a routerLink="/about-page" class="nav-item nav-link fnt11">About Us</a></li>
+                    <li><a routerLink="/service-page" class="nav-item nav-link fnt11">Services</a></li>
+                    <li><a routerLink="/techno-page" class="nav-item nav-link fnt11">Technologies</a></li>
+                    <li><a routerLink="/hire-page" class="nav-item nav-link fnt11">Hire Team</a></li>
+                    <li><a routerLink="/career-page" class="nav-item nav-link fnt11">career-page</a></li>
+                    <li><a routerLink="/contact-data" class="nav-item nav-link fnt11">Contact Us</a></li> 
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4 fnt11">
+                        <a href="tel: 01724002163" class="position-relative animated tada infinite fnt11">
+                            <i class="fa fa-phone fa-1x"></i>
+                            <!-- <div class="position-absolute" style="top: -7px; left: 20px;">
+                                <span><i class="fa fa-comment-dots blue-color-text"></i></span>
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column fnt11">
+
+                        <span class="blue-color-text fnt11 bol">Call: 0172 4002163</span>
+                    </div>
+                    <!--  <div class="d-flex align-items-center justify-content-center ms-4 ">
+                        <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                    </div> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
