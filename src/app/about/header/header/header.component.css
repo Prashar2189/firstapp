@@ -30,12 +30,6 @@
 }
 
 
-.fntawsome{
-  font-family: 'FontAwesome';
-  font-style: normal;
-}
-
-
 .btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
   padding: 0;
   display: flex;
@@ -49,46 +43,11 @@
   height: 32px;
 }
 
-.btn {
-  transition: .5s;
-}
-
-.fa, .fab, .fad, .fal, .far, .fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fa-linkedin-in:before {
-  content: "\f0e1";
-}
-
-.fnt11{
-font-family: "Inter", sans-serif;
-}
 
 
-.topbar .top-info {
-  letter-spacing: 1px;
-}
 
-.fa, .fab, .fad, .fal, .far, .fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}
 
-.fixed-nav[_ngcontent-ng-c3775710024] {
-  position: fixed;
-  z-index: 999;
-  width: 100vw;
-  top: 0;
-}
+
+
+
+

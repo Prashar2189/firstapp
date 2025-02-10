@@ -21,15 +21,12 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              { "glob": "**/*", "input": "src/assets", "output": "assets" },
+              { "glob": "**/*.css", "input": "src/assets/lib/animate", "output": "assets/lib/animate" },
+              { "glob": "**/*.css", "input": "src/assets/css", "output": "assets/css" }
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-               "node_modules/font-awesome/css/font-awesome.min.css",
-               "node_modules/animate.css/animate.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
