@@ -1,5 +1,3 @@
-/* Mukund CSS Start */
-
 .black-icon {
     color: #000;
 }
@@ -301,16 +299,7 @@
     vertical-align: middle;
     margin-left: 8px;
 }
-.outer-pills {
-    width: 800px;
-}
-.outer-pills .nav-pills .nav-link {
-    background: #eee;margin-bottom: 10px;
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #1842b6;
-}
+
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
