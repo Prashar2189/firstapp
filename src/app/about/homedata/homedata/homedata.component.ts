@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-homedata',
   imports: [],
@@ -7,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './homedata.component.css'
 })
 export class HomedataComponent {
+
+emailad = "contact@appsimity.com"
 
 }
