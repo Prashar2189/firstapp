@@ -13,5 +13,7 @@ export class AboutdataComponent implements AfterViewInit {
   ngAfterViewInit() {
     // ✅ Reinitialize scripts when this component loads
     this.mainService.initializeAllScripts();
+
+    window.scrollTo(0, 0);
   }
 }
