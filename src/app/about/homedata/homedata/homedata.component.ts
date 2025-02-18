@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { MainService } from '../../../services/main.service';
 
 
 
@@ -8,8 +9,17 @@ import { Component } from '@angular/core';
   templateUrl: './homedata.component.html',
   styleUrl: './homedata.component.css'
 })
-export class HomedataComponent {
+export class HomedataComponent implements AfterViewInit {
 
-emailad = "contact@appsimity.com"
+  emailad = "contact@appsimity.com"
 
+  constructor(private mainService: MainService) {}
+
+  ngAfterViewInit() {
+    // ✅ Reinitialize scripts when this component loads
+    this.mainService.initializeAllScripts();
+  }
 }
+
+
+

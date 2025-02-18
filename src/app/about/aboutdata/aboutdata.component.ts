@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'app-aboutdata',
-  imports: [],
   templateUrl: './aboutdata.component.html',
-  styleUrl: './aboutdata.component.css'
+  styleUrls: ['./aboutdata.component.css']
 })
-export class AboutdataComponent {
+export class AboutdataComponent implements AfterViewInit {
 
+  constructor(private mainService: MainService) {}
+
+  ngAfterViewInit() {
+    // ✅ Reinitialize scripts when this component loads
+    this.mainService.initializeAllScripts();
+  }
 }

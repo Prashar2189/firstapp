@@ -793,14 +793,16 @@
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    background: #c1dad0;
+    background: #c1dad0!important;
     border-radius: 15px;
     transition: .5s;
 }
 
+
+
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: #3781c2;
+    background: #3781c2!important;;
 }
 
 .testimonial-carousel .owl-item.center {
