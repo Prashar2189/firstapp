@@ -1,8 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { MainService } from '../../services/main.service';
-
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-aboutdata',
+  imports: [RouterLink],
   templateUrl: './aboutdata.component.html',
   styleUrls: ['./aboutdata.component.css']
 })

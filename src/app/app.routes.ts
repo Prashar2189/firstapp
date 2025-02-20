@@ -12,28 +12,34 @@ import { ContactdataComponent } from './about/contactdata/contactdata/contactdat
 export const routes: Routes = [
    {
       path:"",
-      component: HomedataComponent
+      component: HomedataComponent,
+      pathMatch: 'full',
+      data: { title: 'Home | Appsimity Solutions' }
    },
 
 
 
 {
     path:"about-page",
-    component: AboutdataComponent
+    component: AboutdataComponent,
+    data: { title: 'About | Appsimity Solutions' }
 },
  {
     path:"service-page",
-    component: ServicedataComponent
+    component: ServicedataComponent,
+    data: { title: 'Services | Appsimity Solutions' }
  },
 
  {
     path:"techno-page",
-    component: TechnodataComponent
+    component: TechnodataComponent,
+    data: { title: 'Technologies | Appsimity Solutions' }
  },
 
  {
     path:"hire-page",
-    component: HiredataComponent
+    component: HiredataComponent,
+    data: { title: 'Hire Team | Appsimity Solutions' }
  },
 
  {
@@ -44,7 +50,9 @@ export const routes: Routes = [
  {
     path:"contact-data",
     component: ContactdataComponent
- }
+ },
+
+ { path: '**', redirectTo: '' }
  
 
 ];

@@ -1,9 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { MainService } from '../../services/main.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-servicedata',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './servicedata.component.html',
   styleUrl: './servicedata.component.css'
 })
