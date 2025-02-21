@@ -44,12 +44,14 @@ export const routes: Routes = [
 
  {
     path:"career-page",
-    component: CareerdataComponent
+    component: CareerdataComponent,
+    data: { title: 'Careers | Appsimity Solutions' }
  },
  
  {
     path:"contact-data",
-    component: ContactdataComponent
+    component: ContactdataComponent,
+    data: { title: 'Contact Us | Appsimity Solutions' }
  },
 
  { path: '**', redirectTo: '' }
