@@ -13,7 +13,7 @@
 <!-- Page Header End -->
 
 
- <!-- Contact Start -->
+<!-- Contact Start -->
 <div class="container-fluid py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
@@ -30,7 +30,8 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="blue-color-text">Address</h4>
-                            <a href="https://maps.app.goo.gl/9hUKhP7HRSdGzfew6" target="_blank" class="h5">Appsimity Solutions LLP 248, Sector 37A, Chandigarh - 160036, Chandigarh, INDIA</a>
+                            <a href="https://maps.app.goo.gl/9hUKhP7HRSdGzfew6" target="_blank" class="h5">Appsimity
+                                Solutions LLP 248, Sector 37A, Chandigarh - 160036, Chandigarh, INDIA</a>
                         </div>
                     </div>
                 </div>
@@ -60,32 +61,51 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
                     <div class="p-3 h-100 rounded contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.1050986337063!2d76.75232729999999!3d30.743549199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedebc05f219d%3A0x64a2acbd382b4ce4!2s248%2C%20Sector%2037A%2C%20Sector%2037%2C%20Chandigarh%2C%20160036!5e0!3m2!1sen!2sin!4v1731480806098!5m2!1sen!2sin" width="480" height="498" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.1050986337063!2d76.75232729999999!3d30.743549199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedebc05f219d%3A0x64a2acbd382b4ce4!2s248%2C%20Sector%2037A%2C%20Sector%2037%2C%20Chandigarh%2C%20160036!5e0!3m2!1sen!2sin!4v1731480806098!5m2!1sen!2sin"
+                            width="480" height="498" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                    <form id="contactForm">
-                        <div class="p-3 rounded contact-form">
-                            <div class="mb-4">
-                                <input type="text" id="userName" class="form-control border-0 py-3" placeholder="Your Name" required>
+
+                    <div class="contact-form">
+                        <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+                            <div class="p-3 rounded contact-form">
+                                <div class="mb-4">
+                                    <input type="text" [(ngModel)]="contactData.name" name="name"
+                                        class="form-control border-0 py-3" placeholder="Your Name" required>
+
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" [(ngModel)]="contactData.email" name="email"
+                                        class="form-control border-0 py-3" placeholder="Your Email" required>
+
+                                </div>
+                                <div class="mb-4">
+                                    <input type="project" [(ngModel)]="contactData.project" name="project"
+                                        class="form-control border-0 py-3" placeholder="Project" required>
+
+                                </div>
+                                <div class="mb-4">
+
+                                    <textarea [(ngModel)]="contactData.message" name="message"
+                                        class="w-100 form-control border-0 py-3" rows="6" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="text-start">
+                                        <button type="submit" class="btn bg-primary text-white py-3 px-5" [disabled]="contactForm.invalid">Send
+                                            Message</button>
+                                </div>
                             </div>
-                            <div class="mb-4">
-                                <input type="email" id="userEmail" class="form-control border-0 py-3" placeholder="Your Email" required>
-                            </div>
-                            <div class="mb-4">
-                                <input type="text" id="userProject" class="form-control border-0 py-3" placeholder="Project" required>
-                            </div>
-                            <div class="mb-4">
-                                <textarea id="userMessage" class="w-100 form-control border-0 py-3" rows="6" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="text-start">
-                                <button class="btn bg-primary text-white py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                            
+                        </form>
+                        
+                        <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </div>
 <!-- Contact End -->

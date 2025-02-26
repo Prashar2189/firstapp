@@ -6,11 +6,19 @@ import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
 import { MainService } from './services/main.service';
+import { FormsModule } from '@angular/forms';
+
+
+
+
+
+
+
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
