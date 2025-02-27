@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/mydatabase", {
+mongoose.connect("mongodb+srv://RP123:mynewpro123@contactdata.ge7tk.mongodb.net/mydatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -40,7 +40,7 @@ const transporter = nodemailer.createTransport({
 // API Route for Contact Form Submission
 app.post("/api/contact", async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { name, email, project, message } = req.body;
 
     // ✅ Validate Required Fields (Backend Side)
     if (!name || !email || !project || !message) {
