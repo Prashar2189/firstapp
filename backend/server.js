@@ -54,17 +54,17 @@ app.post("/api/contact", async (req, res) => {
     // ✅ Email Details
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.RECEIVER_EMAIL,
+      to: process.env.EMAIL_RECIPIENTS.split(","), // Converts comma-separated emails to an array
       subject: "New Contact Form Submission",
       text: `You have a new message:
-
+  
       Name: ${name}
       Email: ${email}
       Project: ${project}
       Message: ${message}
       
       - Angular App`,
-    };
+  };
 
     // ✅ Send Email
     transporter.sendMail(mailOptions, (error, info) => {
