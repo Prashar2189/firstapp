@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: "my-backend-b15yvtofy-rprashars-projects.vercel.app" // Change to your deployed backend URL
+    apiUrl: "my-backend-k0q44frt7-rprashars-projects.vercel.app" // Change to your deployed backend URL
   };
   
