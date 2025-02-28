@@ -29,7 +29,7 @@ export class ContactdataComponent implements OnInit {
 
   submitForm() {
     // ✅ Prevent submission if fields are empty
-    if (!this.contactData.name || !this.contactData.email || !this.contactData.message) {
+    if (!this.contactData.name || !this.contactData.email || !this.contactData.project || !this.contactData.message) {
       this.errorMessage = "All fields are required!";
       return;
     }
