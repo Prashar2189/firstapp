@@ -21,10 +21,11 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              { "glob": "**/*", "input": "src/assets", "output": "assets" }
-              
-            
-              
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
+              }
             ],
             "styles": [
               "src/styles.css",
@@ -32,9 +33,6 @@
               "src/assets/css/style.css",
               "src/assets/lib/animate/animate.min.css",
               "src/assets/lib/animate/animate.css",
-
-              
-
               "node_modules/slick-carousel/slick/slick.css",
               "node_modules/slick-carousel/slick/slick-theme.css",
               "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
@@ -49,11 +47,16 @@
               "node_modules/slick-carousel/slick/slick.min.js",
               "node_modules/waypoints/lib/noframework.waypoints.min.js",
               "src/assets/js/main.js"
-             
             ]
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
